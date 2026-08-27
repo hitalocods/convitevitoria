@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function initApp() {
   setupPageNavigation();
+  setupMusicPlayer();
   setupRsvpForm();
   setupPixCopy();
   setupAdminPanel();
@@ -89,6 +90,7 @@ function setupPageNavigation() {
   if (btnOpen) {
     btnOpen.addEventListener("click", () => {
       goToPage("main");
+      playMusic();
       showToast("Bem-vindo(a) ao meu aniversário! 🍒❤️");
     });
   }
@@ -97,6 +99,81 @@ function setupPageNavigation() {
     btnBackCover.addEventListener("click", () => {
       goToPage("cover");
     });
+  }
+}
+
+/**
+ * Controle de Música de Fundo (Ariana Grande - arianamusica.mp3)
+ * Toca imediatamente ao abrir o site.
+ */
+let isMusicPlaying = false;
+
+function setupMusicPlayer() {
+  const audio = document.getElementById("bgMusic");
+  const btnToggle = document.getElementById("btnToggleMusic");
+
+  if (!audio) return;
+
+  // Initial volume
+  audio.volume = 0.6;
+
+  // 1. Tentar tocar imediatamente ao carregar
+  playMusic();
+
+  // 2. Se o navegador bloquear o autoplay sem interação, tocar no primeiríssimo toque em qualquer lugar da tela
+  const startAudioOnFirstInteraction = () => {
+    if (audio.paused && !audio.ended) {
+      playMusic();
+    }
+  };
+
+  window.addEventListener("click", startAudioOnFirstInteraction, { once: true });
+  window.addEventListener("touchstart", startAudioOnFirstInteraction, { once: true, passive: true });
+  window.addEventListener("scroll", startAudioOnFirstInteraction, { once: true, passive: true });
+
+  // 3. Botão flutuante para pausar/desmutar quando quiser
+  if (btnToggle) {
+    btnToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (audio.paused) {
+        playMusic();
+      } else {
+        pauseMusic();
+      }
+    });
+  }
+}
+
+function playMusic() {
+  const audio = document.getElementById("bgMusic");
+  const btnToggle = document.getElementById("btnToggleMusic");
+  if (!audio) return;
+
+  audio.play().then(() => {
+    isMusicPlaying = true;
+    if (btnToggle) {
+      btnToggle.classList.add("is-playing");
+      btnToggle.classList.remove("is-paused");
+      btnToggle.innerHTML = `<span class="music-icon-note">🎵</span>`;
+      btnToggle.setAttribute("title", "Pausar música");
+    }
+  }).catch((err) => {
+    console.warn("Autoplay bloqueado pelo navegador aguardando interação:", err);
+  });
+}
+
+function pauseMusic() {
+  const audio = document.getElementById("bgMusic");
+  const btnToggle = document.getElementById("btnToggleMusic");
+  if (!audio) return;
+
+  audio.pause();
+  isMusicPlaying = false;
+  if (btnToggle) {
+    btnToggle.classList.remove("is-playing");
+    btnToggle.classList.add("is-paused");
+    btnToggle.innerHTML = `<span>🔇</span>`;
+    btnToggle.setAttribute("title", "Tocar música");
   }
 }
 

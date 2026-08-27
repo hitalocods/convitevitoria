@@ -89,6 +89,59 @@ body {
   }
 }
 
+/* Floating Music Toggle Button */
+.floating-music-toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 99;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(166, 22, 46, 0.35);
+  box-shadow: 0 4px 18px rgba(63, 6, 13, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-wine-dark);
+  font-size: 1.15rem;
+  transition: var(--transition-bounce);
+}
+
+.floating-music-toggle:hover {
+  transform: scale(1.1);
+  background: #FFFFFF;
+  border-color: var(--color-cherry);
+}
+
+.floating-music-toggle.is-playing {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF0F2 100%);
+  border-color: var(--color-cherry);
+  animation: pulseMusic 2.5s infinite ease-in-out;
+}
+
+.floating-music-toggle.is-playing .music-icon-note {
+  display: inline-block;
+  animation: rotateVinyl 7s linear infinite;
+}
+
+.floating-music-toggle.is-paused {
+  opacity: 0.75;
+}
+
+@keyframes rotateVinyl {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulseMusic {
+  0%, 100% { box-shadow: 0 4px 15px rgba(166, 22, 46, 0.2); }
+  50% { box-shadow: 0 4px 24px rgba(166, 22, 46, 0.45); }
+}
+
 /* Floating Ambient Cherries */
 .ambient-cherries {
   position: fixed;
