@@ -1085,10 +1085,23 @@ body {
   margin-bottom: 6px;
 }
 
-.pix-recipient {
-  font-size: 0.85rem;
+.pix-details {
+  margin: 6px auto 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pix-recipient,
+.pix-bank {
+  font-size: 0.86rem;
   color: var(--color-text-muted);
-  margin-bottom: 8px;
+}
+
+.pix-recipient strong,
+.pix-bank strong {
+  color: var(--color-wine-dark);
+  font-weight: 700;
 }
 
 .pix-key-display {

@@ -9,18 +9,19 @@ import { neon } from "https://esm.sh/@neondatabase/serverless@0.10.4";
 
 export const EVENT_CONFIG = {
   birthdayPerson: "Vitória",
-  fullName: "Vitória Madalena",
+  fullName: "Vitória Madalena Nepomuceno Bezerra",
   age: "25 anos",
   birthdayDate: "26/10",
   partyDate: "31/10",
   partyWeekday: "Sábado",
   partyTime: "A partir das 19h",
-  rsvpDeadline: "20/09",
+  rsvpDeadline: "05/10",
   locationName: "Quintal da Cerva Eventos",
   locationAddress: "Rua Humberto de Campos, 2491 (Antiga Rua 2) - Lourival Parente",
   mapsUrl: "https://www.google.com.br/maps/place/Quintal+da+Cerva+Eventos/@-5.136083,-42.7827626,17z/data=!3m1!4b1!4m6!3m5!1s0x78e31f6c43eab33:0x45da9909f1aec565!8m2!3d-5.136083!4d-42.7801877!16s%2Fg%2F11rwwpqlhv?entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D",
   pixKey: "086.861.763-64",
-  pixName: "Vitória Madalena",
+  pixName: "Vitória Madalena Nepomuceno Bezerra",
+  pixBank: "Banco Inter",
   adminPin: "2510", // PIN para acesso ao painel administrativo
 
   // ==========================================================================
