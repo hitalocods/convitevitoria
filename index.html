@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vitória 25 Anos 🍒 — Convite de Aniversário</title>
+
+    <!-- SEO & Social Sharing -->
+    <meta name="description"
+        content="Você está convidado para celebrar meu aniversário de 25 anos! Dia 31/10 às 19h no Quintal da Cerva.">
+    <meta name="theme-color" content="#5F0914">
+
+    <!-- Google Fonts: Editorial & Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Ambient Decorative Cherries -->
+    <div class="ambient-cherries" aria-hidden="true">
+        <div class="floating-cherry cherry-1">🍒</div>
+        <div class="floating-cherry cherry-2">🍒</div>
+        <div class="floating-cherry cherry-3">🍒</div>
+        <div class="floating-cherry cherry-4">🍒</div>
+    </div>
+
+    <!-- Mobile App Centered Container -->
+    <main class="app-container">
+
+        <!-- ====================================================================
+         PÁGINA 1 — CAPA DO CONVITE (TELA INICIAL EXCLUSIVA)
+         ==================================================================== -->
+        <div class="page-view active-page" id="pageCover">
+            <header class="cover-screen">
+                <div class="cover-border-frame"></div>
+
+                <!-- Header Typography -->
+                <div class="cover-header">
+                    <span class="sub-tag">Convite Exclusivo 🍒</span>
+                    <h1 class="cover-title">
+                        Vitória
+                        <span>Celebração de 25 Anos</span>
+                    </h1>
+                    <p class="cover-phrase">"Uma noite especial merece pessoas especiais."</p>
+                </div>
+
+                <!-- Cover Photo with Badge -->
+                <div class="cover-photo-wrapper">
+                    <div class="cover-photo-card">
+                        <img src="img/capa.jpeg" alt="Vitória comemorando aniversário" loading="eager">
+                    </div>
+                    <div class="photo-cherry-badge">🍒</div>
+                </div>
+
+                <!-- Date Distinction Hierarchy Card -->
+                <div class="date-highlight-card">
+                    <div class="birthday-original">
+                        <span>Meu Aniversário</span>
+                        <strong>26/10</strong>
+                    </div>
+
+                    <div class="date-separator-line">
+                        <span>✦</span>
+                    </div>
+
+                    <div class="party-date-grand">
+                        <span class="party-tagline">Mas a festa será dia</span>
+                        <span class="party-main-date">31/10</span>
+                        <span class="party-weekday">Sábado • A partir das 19h</span>
+                    </div>
+                </div>
+
+                <!-- Action Button to Open Invitation -->
+                <div class="open-invitation-action">
+                    <button type="button" class="btn-open-invite" id="btnOpenInvite">
+                        <span>Toque para abrir o convite</span>
+                        <span style="font-size: 1.2rem;">🍒</span>
+                    </button>
+                    <span class="open-hint">Clique para acessar as opções do evento</span>
+                </div>
+            </header>
+        </div>
+
+        <!-- ====================================================================
+         PÁGINA 2 — MENU PRINCIPAL & DETALHES (HUB DO CONVITE)
+         ==================================================================== -->
+        <div class="page-view hidden-page" id="pageMain">
+
+            <!-- Top Navigation Bar -->
+            <div class="top-nav-bar">
+                <button type="button" class="btn-back-cover" id="btnBackCover">
+                    <span>←</span>
+                    <span>Ver Capa</span>
+                </button>
+                <span class="top-bar-tag">Vitória 25 Anos 🍒</span>
+            </div>
+
+            <div class="main-experience">
+
+                <!-- Welcome Hero with Isolated Cutout & Ornaments -->
+                <section class="welcome-cutout-section">
+
+                    <div class="cutout-composition-wrapper">
+                        <!-- Background Arch Aura -->
+                        <div class="cutout-backdrop-arch"></div>
+
+                        <!-- Floating Ornaments -->
+                        <div class="cutout-ornament ornament-cherry-left">🍒</div>
+                        <div class="cutout-ornament ornament-cherry-right">🍒</div>
+                        <div class="cutout-ornament ornament-sparkle-1">✨</div>
+                        <div class="cutout-ornament ornament-sparkle-2">✦</div>
+                        <div class="cutout-ornament ornament-sparkle-3">✨</div>
+
+                        <!-- Isolated Vitória Portrait Cutout from img 1 -->
+                        <img src="img/vitoria_portrait_recortada.png" alt="Vitória Madalena" class="cutout-image">
+
+                        <!-- Elegant Pill Badge -->
+                        <div class="ornament-badge-pill">
+                            <span>🍒</span>
+                            <span>Vitória • 25 Anos</span>
+                            <span>✨</span>
+                        </div>
+                    </div>
+
+                    <h2 class="greeting-title">Você é meu convidado!</h2>
+                    <p class="greeting-text">
+                        Preparei cada detalhe dessa noite para celebrarmos juntos. Escolha uma das opções abaixo:
+                    </p>
+                </section>
+
+                <!-- 3 Grandes Opções Interativas (Main Navigation Cards) -->
+                <nav class="main-nav-cards" aria-label="Menu principal do convite">
+
+                    <!-- Card 1: Confirmar Presença -->
+                    <a href="#section-rsvp" class="action-card card-primary">
+                        <div class="card-icon-box">🍒</div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                Confirmar Presença
+                            </div>
+                            <div class="card-subtext">Confirme sua presença até 20/09</div>
+                        </div>
+                        <div class="card-arrow">➔</div>
+                    </a>
+
+                    <!-- Card 2: Lista de Presentes -->
+                    <a href="#section-gifts" class="action-card">
+                        <div class="card-icon-box">🎁</div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                Lista de Presentes
+                            </div>
+                            <div class="card-subtext">Mimos & contribuição carinhosa via PIX</div>
+                        </div>
+                        <div class="card-arrow">➔</div>
+                    </a>
+
+                    <!-- Card 3: Dress Code + Localização -->
+                    <a href="#section-details" class="action-card">
+                        <div class="card-icon-box">👗</div>
+                        <div class="card-content">
+                            <div class="card-title">
+                                Dress Code & Local
+                            </div>
+                            <div class="card-subtext">Quintal da Cerva • Horário • Cores</div>
+                        </div>
+                        <div class="card-arrow">➔</div>
+                    </a>
+
+                </nav>
+
+                <div class="ornament-divider">
+                    <span class="ornament-icon">🍒</span>
+                </div>
+
+                <!-- ==================================================================
+             SEÇÃO 1 — CONFIRMAR PRESENÇA (RSVP)
+             ================================================================== -->
+                <section id="section-rsvp" class="section-rsvp">
+                    <div class="section-header">
+                        <span class="section-tag">Confirmação</span>
+                        <h2 class="section-title">Confirme sua presença</h2>
+                        <p class="section-subtitle">Sua resposta é muito importante para organizarmos tudo com carinho
+                        </p>
+                    </div>
+
+                    <div class="rsvp-box">
+                        <!-- Form View -->
+                        <div id="rsvpFormBox">
+                            <form id="rsvpForm">
+                                <!-- Name -->
+                                <div class="form-group">
+                                    <label for="rsvpName" class="form-label">Seu Nome Completo</label>
+                                    <input type="text" id="rsvpName" class="form-input"
+                                        placeholder="Como você se chama?" required>
+                                </div>
+
+                                <!-- Attendance Choice Buttons -->
+                                <div class="form-group">
+                                    <label class="form-label">Você vai comparecer?</label>
+                                    <div class="presence-choice-grid">
+                                        <button type="button" class="choice-btn selected-yes" id="choiceYes">
+                                            <span>🍒</span>
+                                            <span>Sim, estarei presente</span>
+                                        </button>
+                                        <button type="button" class="choice-btn" id="choiceNo">
+                                            <span>💌</span>
+                                            <span>Não poderei ir</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Dynamic Companions Section -->
+                                <div id="companionsSection" class="companions-container">
+                                    <div class="form-group">
+                                        <label for="rsvpCompanions" class="form-label">Quantos Acompanhantes?</label>
+                                        <select id="rsvpCompanions" class="form-select">
+                                            <option value="0">Vou sozinho(a)</option>
+                                            <option value="1">+1 acompanhante</option>
+                                            <option value="2">+2 acompanhantes</option>
+                                            <option value="3">+3 acompanhantes</option>
+                                            <option value="4">+4 acompanhantes</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group hidden" id="companionNamesGroup">
+                                        <label for="rsvpCompanionNames" class="form-label">Nome do(s)
+                                            Acompanhante(s)</label>
+                                        <input type="text" id="rsvpCompanionNames" class="form-input"
+                                            placeholder="Nome de quem vai com você">
+                                    </div>
+                                </div>
+
+                                <!-- Message / Recadinho -->
+                                <div class="form-group">
+                                    <label for="rsvpMessage" class="form-label">Deixe uma mensagem (Opcional)</label>
+                                    <textarea id="rsvpMessage" class="form-textarea" rows="3"
+                                        placeholder="Um recadinho carinhoso para a Vitória..."></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-submit-rsvp" id="btnSubmitRsvp">
+                                    Enviar Confirmação 🍒
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Success State View -->
+                        <div id="rsvpSuccessBox" class="rsvp-success-state">
+                            <div class="success-cherry-icon">🍒❤️</div>
+                            <h3 class="success-title">Confirmação Enviada!</h3>
+                            <p class="success-msg" id="rsvpSuccessMsg">
+                                Sua resposta foi registrada com sucesso.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="ornament-divider">
+                    <span class="ornament-icon">✦</span>
+                </div>
+
+                <!-- ==================================================================
+             SEÇÃO 2 — LISTA DE PRESENTES (PIX FOCUS)
+             ================================================================== -->
+                <section id="section-gifts" class="section-gifts">
+                    <div class="section-header">
+                        <span class="section-tag">Mimos & Carinho</span>
+                        <h2 class="section-title">Lista de Presentes 🎁</h2>
+                    </div>
+
+                    <div class="gift-card-main">
+                        <div class="gift-intro-box">
+                            <p>
+                                "Sua presença é, sem dúvidas, o meu maior presente! ❤️ Mas, se você quiser me presentear
+                                de uma forma diferente, deixei essa opção de contribuição via Pix para me ajudar a
+                                realizar alguns sonhos nessa nova fase dos meus 25 anos."
+                            </p>
+                        </div>
+
+                        <!-- PIX Card -->
+                        <div class="pix-highlight-card">
+                            <div class="pix-tag">Chave PIX Oficial</div>
+                            <div class="pix-recipient">Favorecida: <strong>Vitória Madalena</strong></div>
+                            <div class="pix-key-display" id="pixKeyDisplay" title="Clique para copiar">086.861.763-64
+                            </div>
+                            <button type="button" class="btn-copy-pix" id="btnCopyPix">
+                                <span>📋 Copiar Chave PIX</span>
+                            </button>
+                        </div>
+
+                        <!-- Value Suggestions -->
+                        <h3 class="gift-values-title">
+                            <span>Sugestões de Mimos</span>
+                        </h3>
+
+                        <div class="gift-values-grid">
+                            <div class="gift-value-item" data-amount="R$ 80">
+                                <div class="value-left">
+                                    <span class="value-emoji">🎁</span>
+                                    <span class="value-amount">R$ 80</span>
+                                </div>
+                                <span class="value-desc">Um mimo para mim 💕</span>
+                            </div>
+
+                            <div class="gift-value-item" data-amount="R$ 100">
+                                <div class="value-left">
+                                    <span class="value-emoji">🧴</span>
+                                    <span class="value-amount">R$ 100</span>
+                                </div>
+                                <span class="value-desc">Um dia de beleza ✨</span>
+                            </div>
+
+                            <div class="gift-value-item" data-amount="R$ 150">
+                                <div class="value-left">
+                                    <span class="value-emoji">🍷</span>
+                                    <span class="value-amount">R$ 150</span>
+                                </div>
+                                <span class="value-desc">Um jantar especial 🍷</span>
+                            </div>
+
+                            <div class="gift-value-item" data-amount="R$ 200">
+                                <div class="value-left">
+                                    <span class="value-emoji">✈️</span>
+                                    <span class="value-amount">R$ 200</span>
+                                </div>
+                                <span class="value-desc">Mais perto de um sonho ✈️</span>
+                            </div>
+
+                            <div class="gift-value-item" data-amount="R$ 250">
+                                <div class="value-left">
+                                    <span class="value-emoji">🎁</span>
+                                    <span class="value-amount">R$ 250</span>
+                                </div>
+                                <span class="value-desc">Um presente especial 🎁</span>
+                            </div>
+
+                            <div class="gift-value-item" data-amount="Outro valor">
+                                <div class="value-left">
+                                    <span class="value-emoji">💖</span>
+                                    <span class="value-amount">Outro valor</span>
+                                </div>
+                                <span class="value-desc">O que o coração quiser 💖</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="ornament-divider">
+                    <span class="ornament-icon">🍒</span>
+                </div>
+
+                <!-- ==================================================================
+             SEÇÃO 3 — LOCALIZAÇÃO, HORÁRIO & DRESS CODE
+             ================================================================== -->
+                <section id="section-details" class="section-event-details">
+                    <div class="section-header">
+                        <span class="section-tag">Informações do Evento</span>
+                        <h2 class="section-title">Onde & Quando</h2>
+                    </div>
+
+                    <div class="details-card-main">
+
+                        <!-- Event Specs 3 Columns -->
+                        <div class="event-specs-grid">
+                            <div class="spec-badge-box">
+                                <div class="spec-badge-icon">📅</div>
+                                <div class="spec-badge-label">Data</div>
+                                <div class="spec-badge-val">31/10</div>
+                            </div>
+
+                            <div class="spec-badge-box">
+                                <div class="spec-badge-icon">🕖</div>
+                                <div class="spec-badge-label">Horário</div>
+                                <div class="spec-badge-val">19h</div>
+                            </div>
+
+                            <div class="spec-badge-box">
+                                <div class="spec-badge-icon">📍</div>
+                                <div class="spec-badge-label">Local</div>
+                                <div class="spec-badge-val">Quintal</div>
+                            </div>
+                        </div>
+
+                        <!-- Location Info Box -->
+                        <div class="location-feature-box">
+                            <h3 class="location-name">Quintal da Cerva Eventos</h3>
+                            <p class="location-address">
+                                Rua Humberto de Campos, 2491<br>
+                                (Antiga Rua 2) — Lourival Parente
+                            </p>
+                            <a href="https://www.google.com.br/maps/place/Quintal+da+Cerva+Eventos/@-5.136083,-42.7827626,17z/data=!3m1!4b1!4m6!3m5!1s0x78e31f6c43eab33:0x45da9909f1aec565!8m2!3d-5.136083!4d-42.7801877!16s%2Fg%2F11rwwpqlhv?entry=ttu&g_ep=EgoyMDI2MDgyMy4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank" rel="noopener noreferrer" class="btn-open-maps">
+                                <span>📍 Abrir no Google Maps</span>
+                            </a>
+                        </div>
+
+                        <!-- Dress Code -->
+                        <div class="dress-code-wrapper">
+                            <h3 class="dress-code-title">Dress Code 👗🍒</h3>
+
+                            <!-- No Red Rule Highlight -->
+                            <div class="dress-code-alert">
+                                <div class="alert-tag">
+                                    <span>🚫 Importante</span>
+                                </div>
+                                <p class="alert-desc">
+                                    "Deixe o vermelho para a aniversariante ❤️🍒"
+                                </p>
+                            </div>
+
+                            <!-- Women's Palette -->
+                            <div class="dress-category">
+                                <div class="category-title">
+                                    <span>👗 Mulheres</span>
+                                </div>
+                                <div class="category-sub">Sugestão de tons claros e delicados:</div>
+                                <div class="swatches-flex">
+                                    <div class="swatch-item">
+                                        <div class="swatch-circle color-white"></div>
+                                        <span class="swatch-label">Branco</span>
+                                    </div>
+                                    <div class="swatch-item">
+                                        <div class="swatch-circle color-beige"></div>
+                                        <span class="swatch-label">Bege</span>
+                                    </div>
+                                    <div class="swatch-item">
+                                        <div class="swatch-circle color-lightbrown"></div>
+                                        <span class="swatch-label">Marrom claro</span>
+                                    </div>
+                                    <div class="swatch-item">
+                                        <div class="swatch-circle color-rose"></div>
+                                        <span class="swatch-label">Rosa</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Men's Palette -->
+                            <div class="dress-category">
+                                <div class="category-title">
+                                    <span>👔 Homens</span>
+                                </div>
+                                <div class="category-sub">Sugestão de tons escuros e sofisticados:</div>
+                                <div class="swatches-flex">
+                                    <div class="swatch-item">
+                                        <div class="swatch-circle color-black"></div>
+                                        <span class="swatch-label">Preto</span>
+                                    </div>
+                                    <div class="swatch-item">
+                                        <div class="swatch-circle color-darkblue"></div>
+                                        <span class="swatch-label">Azul escuro</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- ==================================================================
+             ENCERRAMENTO (FOOTER)
+             ================================================================== -->
+                <footer class="footer-section">
+                    <div class="footer-photo-card">
+                        <img src="img/img 1.jpeg" alt="Vitória">
+                    </div>
+
+                    <h3 class="footer-quote">Espero você para comemorar comigo!</h3>
+                    <p class="footer-author">Com amor, Vitória <span class="secret-admin-trigger" id="btnOpenAdmin" title="♡">🍒</span>❤️</p>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ====================================================================
+       MODAL PAINEL ADMINISTRATIVO (PROTEGIDO POR PIN)
+       ==================================================================== -->
+    <div class="modal-backdrop" id="adminModalBackdrop" role="dialog" aria-modal="true">
+        <div class="modal-admin-card">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span>🔒 Painel de Confirmações</span>
+                </div>
+                <button type="button" class="modal-close-btn" id="btnCloseAdmin" aria-label="Fechar">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <!-- Login View -->
+                <div id="adminLoginView" class="admin-login-box">
+                    <div class="admin-login-icon">🍒🔐</div>
+                    <h4
+                        style="font-family: var(--font-serif-display); font-size: 1.25rem; color: var(--color-wine-dark);">
+                        Área da Aniversariante</h4>
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 4px;">Digite o PIN de
+                        acesso para gerenciar as confirmações:</p>
+
+                    <input type="password" id="adminPinInput" class="form-input admin-pin-input" placeholder="••••"
+                        maxlength="8">
+
+                    <button type="button" class="btn-submit-rsvp" id="btnLoginAdmin"
+                        style="max-width: 200px; margin: 10px auto 0;">
+                        Acessar Painel
+                    </button>
+                </div>
+
+                <!-- Dashboard View (Shown after authentication) -->
+                <div id="adminDashboardView" style="display: none;">
+                    <!-- Metrics Overview -->
+                    <div class="metrics-grid">
+                        <div class="metric-card metric-confirmed">
+                            <div class="metric-number" id="metricConfirmed">0</div>
+                            <div class="metric-label">Confirmados</div>
+                        </div>
+                        <div class="metric-card metric-declined">
+                            <div class="metric-number" id="metricDeclined">0</div>
+                            <div class="metric-label">Recusados</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-number" id="metricCompanions">0</div>
+                            <div class="metric-label">Acompanhantes</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-number" id="metricTotal">0</div>
+                            <div class="metric-label">Total Pessoas</div>
+                        </div>
+                    </div>
+
+                    <!-- Controls: Search & Filters -->
+                    <div class="admin-controls">
+                        <input type="text" id="adminSearchInput" class="search-input"
+                            placeholder="🔍 Buscar por nome...">
+                        <div class="filter-pills">
+                            <button type="button" class="filter-pill active" data-filter="all">Todos</button>
+                            <button type="button" class="filter-pill" data-filter="yes">Confirmados</button>
+                            <button type="button" class="filter-pill" data-filter="no">Não vão</button>
+                        </div>
+                    </div>
+
+                    <!-- Guest List Wrapper -->
+                    <div class="guest-list-wrapper" id="adminGuestList">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admin Actions Footer Bar -->
+            <div class="admin-actions-bar" id="adminActionsBar">
+                <button type="button" class="btn-admin-action" id="btnExportCsv">
+                    📥 Exportar CSV
+                </button>
+                <button type="button" class="btn-admin-action" id="btnCopyWhatsApp">
+                    💬 Copiar p/ WhatsApp
+                </button>
+                <button type="button" class="btn-admin-action" id="btnClearAll" style="color: #A6162E;">
+                    🗑️ Limpar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-notification" id="toastNotification" role="status" aria-live="polite"></div>
+
+    <!-- Main JavaScript (Módulo com Suporte a Neon Postgres) -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
